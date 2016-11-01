@@ -1,13 +1,10 @@
-import { helper } from './helperModules';
-import { foo as secondModule } from './helperModules';
+import { helper, foo as secondModule } from './helperModules';
 
-var giveName: string;
+var giveName: string = 'Smile: ';
 let myFirstVariable: string | number = start(giveName);
 
 function start(name: string) {
-    return myFirstVariable + 'hahaahahhaa';
+    return name + 'hahaahahhaa';
 };
-
-giveName = 'Smile: ';
 
 console.log(myFirstVariable, helper, secondModule);
